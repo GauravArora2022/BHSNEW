@@ -8,13 +8,13 @@ jobs:
   terraform:
     runs-on: ubuntu-latest
 
-    env:
+  env:
       ARM_CLIENT_ID: 9c2a7021-7353-4ed4-9789-0e1bae0e09ab
       ARM_CLIENT_SECRET: ${{secrets.TF_ARM_CLIENT_SECRET}}
       ARM_SUBSCRIPTION_ID: 9c2a7021-7353-4ed4-9789-0e1bae0e09ab
       ARM_TENANT_ID: d52c9ea1-7c21-47b1-82a3-33a74b1f74b8
 
-    steps:
+  steps:
       - uses: actions/checkout@v2
 
       - name: Setup Terraform
